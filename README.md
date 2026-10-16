@@ -226,7 +226,7 @@ You can deploy this project as a normal Node.js web service; Docker is optional 
 3. **Set the build command:**
 
    ```bash
-   npm ci --prefix frontend && npm run build --prefix frontend && npm ci --omit=dev --prefix backend
+   npm ci --include=dev --prefix frontend && npm run build --prefix frontend && npm ci --omit=dev --prefix backend
    ```
 
    This builds `frontend/dist`, which the Express app serves in production.
